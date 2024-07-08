@@ -1,0 +1,25 @@
+nav  {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--white);
+}
+nav .logo {
+  text-decoration: none;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: 800;
+}
+nav .logo:hover {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+nav  ul li {
+  margin: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+nav .link{
+  text-decoration: none;
+  color: var(--Gray-dark);
+}
