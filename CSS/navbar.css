@@ -3,6 +3,7 @@ nav  {
   justify-content: space-evenly;
   align-items: center;
   background: var(--white);
+  font-size: calc(10px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
 }
 nav .logo {
   text-decoration: none;

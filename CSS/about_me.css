@@ -1,0 +1,57 @@
+main .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    max-width: 550px;
+    padding-top: 6rem;
+    margin: auto;
+    text-align: left;
+}
+main .color-text1 {
+    color: var(--gray);
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    padding-bottom: 2rem;
+}
+main .color-text2 {
+    color: var(--gray-dark);
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+}
+main .display-4 {
+    font-weight: lighter;
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+    font-family: 'Open Sans', sans-serif;
+    opacity: 8;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+}
+main .section-content .left-button{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 4rem;
+}
+main .About_me {
+    
+    padding-top: 4rem;
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+main .About_me_Section1 {
+    max-width: 400px;
+    min-width: 400px;
+    margin-right: 20px;
+}
+main .About_me_Section2 {
+    flex-grow: 1;
+}
+main .About_me p {
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 10px;
+    text-align: justify;
+}
