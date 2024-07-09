@@ -1,0 +1,63 @@
+main .title-portfolio {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+main .title-portfolio h6 {
+    color: var(--indigo);
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+main .title-portfolio h6:hover {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: calc(25px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+}
+
+.portfolio .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.portfolio .card:hover {
+    transform: scale(1.05);
+}
+.portfolio .card img {
+    border-radius: 15px 15px 0 0;
+}
+.portfolio .card-body {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    transition: background 0.2s ease;
+}
+.portfolio .card:hover .card-body {
+    background: rgba(255, 255, 255, 0.8);
+}
+.portfolio .card-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.portfolio .card-text {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.portfolio .card:hover .card-text {
+    display: block;
+    opacity: 1;
+}
+.portfolio .tech-icons i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+.portfolio .tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

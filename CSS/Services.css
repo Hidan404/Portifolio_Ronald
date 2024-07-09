@@ -12,12 +12,22 @@ main .card-body img {
     height: 55px;
     padding-bottom: 1rem;
 }
-
+main .service-text p {
+    font-family: 'Open Sans', sans-serif;
+}
+main .service-text h3 {
+    color: var(--indigo);
+}
 .card {
     transition: transform 0.2s;
 }
 .card:hover {
     transform: scale(1.05);
+}
+.card h6 {
+    color: var(--indigo);
+    gap: 1rem;
+    font-weight: 600;
 }
 .card .description {
     opacity: 0;
@@ -25,4 +35,5 @@ main .card-body img {
 }
 .card:hover .description {
     opacity: 1;
+    font-family: 'Open Sans', sans-serif;
 }
