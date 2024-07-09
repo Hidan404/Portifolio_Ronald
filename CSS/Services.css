@@ -1,0 +1,28 @@
+main .service-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+}
+
+main .card-body img {
+    width: 55px;
+    height: 55px;
+    padding-bottom: 1rem;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card .description {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover .description {
+    opacity: 1;
+}
