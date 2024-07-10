@@ -2,6 +2,9 @@
 @import url("about_me.css");
 @import url("Services.css");
 @import url("Portfolio.css");
+@import url("skills.css");
+@import url("contact.css");
+@import url("footer.css");
 
 * {
     padding: 0;

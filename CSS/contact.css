@@ -1,0 +1,18 @@
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+main textarea::placeholder {
+    color: transparent;
+    font-weight: lighter;
+}
+main input,textarea {
+    font-family: "Open Sans", sans-serif;
+}

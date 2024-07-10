@@ -14,6 +14,9 @@ main .title-portfolio h6:hover {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-size: calc(25px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
 }
+main .row .col-md-6 {
+    padding-bottom: 4rem;
+}
 
 .portfolio .card {
     position: relative;
@@ -21,6 +24,7 @@ main .title-portfolio h6:hover {
     border: none;
     border-radius: 15px;
     transition: transform 0.3s ease;
+    
 }
 .portfolio .card:hover {
     transform: scale(1.05);
