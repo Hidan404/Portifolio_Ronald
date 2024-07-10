@@ -1,5 +1,7 @@
 .skills-section {
     padding: 60px 0;
+    max-width: 800px;
+    margin: auto;
 }
 .skills-section h2 {
     text-align: center;
