@@ -35,23 +35,56 @@ main .section-content .left-button{
     padding-bottom: 4rem;
 }
 main .About_me {
-    
     padding-top: 4rem;
     display: flex;
     max-width: 1140px;
     margin: auto;
+    
 }
 
 main .About_me_Section1 {
     max-width: 400px;
     min-width: 400px;
     margin-right: 20px;
+    flex: 1 1 400px;
 }
 main .About_me_Section2 {
     flex-grow: 1;
+    flex: 1 1 calc(100% - 420px);
 }
 main .About_me p {
     font-family: 'Open Sans', sans-serif;
     text-indent: 10px;
     text-align: justify;
+    
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    main .About_me {
+      flex-direction: column; /* Empilhar colunas em telas menores */
+      align-items: center;
+    }
+    main .About_me p {
+        margin: 0 15px;
+        padding-top: 1rem;
+    }
+    main .About_me h2 {
+        margin: 0 20px;
+        padding-top: 1rem;
+    }
+  
+    main .About_me_Section1, main .About_me_Section2 {
+      max-width: 100%;
+      min-width: auto;
+      margin: 15px 15px 15px 15px;
+    }
+  
+    main .About_me_Section2 {
+      
+      width: 100%;
+    }
+  }

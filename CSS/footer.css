@@ -4,7 +4,45 @@
     align-items: center;
     
 }
+.rodape footer {
+    width: 100%;
+}
 footer .copyright,.social-links {
     width: 50%;
-    background-color: brown;
+    
+}
+footer .social-links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: end;
+    height: 100px;
+}
+footer .social-links a {
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+footer .social-links a i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+footer .social-links a i:hover {
+    font-size: 30px;
+}
+footer .copyright {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    height: 100px
+}
+footer .copyright p{
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }

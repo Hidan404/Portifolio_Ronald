@@ -15,6 +15,10 @@ nav .logo {
 nav .logo:hover {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
+nav ul {
+  display: flex;
+  list-style: none;
+}
 nav  ul li {
   margin: 1.4rem;
   display: flex;
@@ -24,3 +28,5 @@ nav .link{
   text-decoration: none;
   color: var(--Gray-dark);
 }
+
+/* menu hamburguer */

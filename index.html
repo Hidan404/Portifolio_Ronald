@@ -14,9 +14,12 @@
 </head>
 <body>
     <div class="container-fluid">
-      <nav class="custom-navbar mb-1">
+      <!--<nav class="custom-navbar mb-1">
         
-            <a class="logo" href="#">Ronald</a>         
+            <a class="logo" href="#">Ronald</a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>       
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -34,12 +37,33 @@
                     <a href="components.html" class="btn btn-primary">Components</a>
                 </li>
             </ul>
-            <!--<a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-            </a>-->
+            
                  
+      </nav>-->
+      <nav class="navbar navbar-expand-md custom-navbar mb-1">
+        <a class="navbar-brand logo" href="#">Ronald</a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>       
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+        </div>
     </nav>
       <main class="mt-1 mb-1">
         <section class="header-content mt-1">
@@ -309,7 +333,6 @@
         </footer>
       </div>
     </div>
-
 
    
 </body>
