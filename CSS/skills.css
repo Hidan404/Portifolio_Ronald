@@ -25,3 +25,8 @@
     line-height: 1.6;
     font-weight: bold;
 }
+@media (max-width: 768px){
+    main .row .col-md-6:first-child {
+        padding-bottom: 0;
+    }
+}

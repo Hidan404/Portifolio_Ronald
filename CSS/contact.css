@@ -3,7 +3,9 @@
     margin: 50px auto;
     padding: 20px;
 }
-
+.contact-form #formulario-space1,#formulario-space2 {
+    padding-bottom: 2rem;
+}
 .contact-form h2 {
     text-align: center;
     margin-bottom: 20px;

@@ -29,6 +29,12 @@ main .display-4 {
     align-items: flex-start;
     width: 100%;
 }
+@media (max-width: 768px){
+    main .display-4 {
+        margin-left: 2.4rem;
+        margin-bottom: 40px;
+    }
+}
 main .section-content .left-button{
     display: flex;
     justify-content: flex-start;
@@ -58,6 +64,7 @@ main .About_me p {
     text-align: justify;
     
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -86,5 +93,8 @@ main .About_me p {
     main .About_me_Section2 {
       
       width: 100%;
+    }
+    main .text-about button {
+        margin-left: 0.9rem;
     }
   }
