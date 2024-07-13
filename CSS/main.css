@@ -46,7 +46,8 @@
 :root {
     --bg-dark: #090E16;
     --font-text: #7B4AE2;
-    --degrade: #7CBAC4;
+    --degrade: #394360;
+    --font-text2: #7B4AE2;
 }
 .container-fluid {
     padding: 0;
