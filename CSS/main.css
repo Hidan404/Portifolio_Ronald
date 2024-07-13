@@ -43,9 +43,14 @@
     --font-family-sans-serif: "Open Sans", sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+:root {
+    --bg-dark: #090E16;
+    --font-text: #7B4AE2;
+    --degrade: #7CBAC4;
+}
 .container-fluid {
     padding: 0;
-    background: linear-gradient(to bottom, var(--blue), var(--white));
+    background-color: var(--bg-dark);
     overflow: hidden;
     
 }
