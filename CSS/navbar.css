@@ -11,6 +11,8 @@ nav .logo {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 800;
+  padding-left: 1rem;
+  color: var(--font-text);
 }
 nav .logo:hover {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -30,8 +32,15 @@ nav .link{
   color: var(--Gray-dark);
 }
 
-#navbarNav {
+.nav-link {
   color: var(--font-text2);
 }
+nav .btn  {
+  background-color: var(--font-text);
+}
 
-/* menu hamburguer */
+@media (max-width: 768px){
+  nav, .btn {
+    font-size: calc(18px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
+  }
+}

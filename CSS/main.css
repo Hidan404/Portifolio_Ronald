@@ -11,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Baloo Paaji', cursive;
+    
 }
 
 :root {
@@ -46,7 +47,7 @@
 :root {
     --bg-dark: #090E16;
     --font-text: #7B4AE2;
-    --font-text2: #4B4C57;
+    --font-text2: #ffffff;
     --degrade: #394360;
     --header: #0F1120;
 }
