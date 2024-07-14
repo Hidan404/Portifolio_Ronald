@@ -31,25 +31,30 @@ main .row .col-md-6 {
 }
 .portfolio .card img {
     border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    max-height: 248px;
 }
 .portfolio .card-body {
     position: relative;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--white);
     backdrop-filter: blur(10px);
     padding: 20px;
     transition: background 0.2s ease;
 }
-.portfolio .card:hover .card-body {
-    background: rgba(255, 255, 255, 0.8);
-}
+
+/*.portfolio .card:hover .card-body {
+    
+}*/
 .portfolio .card-title {
     margin-bottom: 15px;
     font-weight: bold;
+    color: var(--dark);
 }
 .portfolio .card-text {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
+    color: var(--font-text);
 }
 .portfolio .card:hover .card-text {
     display: block;

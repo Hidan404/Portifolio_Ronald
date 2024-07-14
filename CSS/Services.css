@@ -8,12 +8,16 @@ main .service-text {
 }
 
 main .card-body img {
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     padding-bottom: 1rem;
+    filter: grayscale(1);
+    fill: white;
 }
+
 main .service-text p {
     font-family: 'Open Sans', sans-serif;
+    color: var(--font-text2);
 }
 @media (max-width: 768px){
     main .service-text p {
@@ -21,12 +25,17 @@ main .service-text p {
         margin-bottom: -4rem;
     }
 }
+main .service .card-body {
+    color: var(--font-text2);
+}
+
 
 main .service-text h3 {
-    color: var(--indigo);
+    color: var(--font-text2);
 }
 .card {
     transition: transform 0.2s;
+    background-color: var(--primary);
 }
 .card:hover {
     transform: scale(1.05);

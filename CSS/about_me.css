@@ -76,7 +76,14 @@ main .About_me p {
 main .About_me h2 {
     color: var(--font-text);
 }
-
+main .text-about .btn-outline-primary {
+    border-color: var(--font-text);
+    color: var(--degrade);
+}
+main .text-about .btn-outline-primary:hover {
+    background-color: var(--font-text);
+    color: var(--font-text2);
+}
 .img-fluid {
     max-width: 100%;
     height: auto;
