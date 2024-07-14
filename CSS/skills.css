@@ -1,3 +1,6 @@
+.habilidades {
+    margin-top: 4rem;
+}
 .skills-section {
     padding: 60px 0;
     max-width: 800px;
@@ -7,6 +10,7 @@
     text-align: center;
     margin-bottom: 50px;
     font-size: 36px;
+    color: var(--font-text2);
 }
 .skill {
     display: flex;

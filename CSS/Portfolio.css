@@ -114,6 +114,6 @@ main .row .col-md-6 {
     transition: transform 0.5s ease;
   }
   
-  .project-card:hover .tech-icons i {
+  /*.project-card:hover .tech-icons i {
     transform: scale(1.1);
-  }
+  }*/

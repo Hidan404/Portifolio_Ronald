@@ -11,6 +11,9 @@
     margin-bottom: 20px;
     
 }
+.contact-form h2, label {
+    color: var(--font-text2);
+}
 main textarea::placeholder {
     color: transparent;
     font-weight: lighter;

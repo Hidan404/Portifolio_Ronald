@@ -45,6 +45,7 @@ footer .copyright p{
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: var(--font-text2);
 }
 
 @media (max-width: 768px){
@@ -57,6 +58,6 @@ footer .copyright p{
     footer .copyright p {
         text-wrap: nowrap;
         padding-left: 0px;
-        padding-right: ;
+        
     }
 }
