@@ -1,8 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const toggler = document.querySelector('.navbar-toggler');
-    const nav = document.querySelector('.nav');
-    toggler.addEventListener('click', function () {
-      nav.classList.toggle('show');
-      toggler.classList.toggle('collapsed');
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const navItems = document.querySelectorAll('.navbar-nav li');
+  navItems.forEach((item, index) => {
+      item.style.setProperty('--animation-delay', `${index * 0.2}s`);
   });
+});

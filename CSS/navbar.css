@@ -25,8 +25,22 @@ nav  ul li {
   margin: 1.4rem;
   display: flex;
   align-items: center;
+  opacity: 0; /* Inicialmente escondido */
+  animation: fall 0.5s forwards;
+  animation-delay: var(--animation-delay);
   
 }
+@keyframes fall {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 nav .link{
   text-decoration: none;
   color: var(--Gray-dark);
@@ -43,4 +57,24 @@ nav .btn  {
   nav, .btn {
     font-size: calc(18px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
   }
+}
+
+
+/* Estilizando o menu hambúrguer */
+.navbar-toggler {
+  border-color: var(--font-text); /* Cor principal */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9, 14, 22, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  border-color: var(--font-text); /* Cor quando pressionado */
+}
+
+.navbar-toggler:focus .navbar-toggler-icon,
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9, 14, 22, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
