@@ -5,6 +5,11 @@ nav  {
   background: var(--degrade);
   font-size: calc(10px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
 }
+@media (max-width: 768px){
+  #Button-nav {
+    margin-right: 8px;
+  }
+}
 nav .logo {
   text-decoration: none;
   text-transform: capitalize;
@@ -62,7 +67,7 @@ nav .btn  {
 
 /* Estilizando o menu hambúrguer */
 .navbar-toggler {
-  border-color: var(--font-text); /* Cor principal */
+  border-color: var(--font-text); 
 }
 
 .navbar-toggler-icon {
@@ -71,7 +76,7 @@ nav .btn  {
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
-  border-color: var(--font-text); /* Cor quando pressionado */
+  border-color: var(--font-text); 
 }
 
 .navbar-toggler:focus .navbar-toggler-icon,

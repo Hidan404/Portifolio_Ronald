@@ -74,9 +74,9 @@ main .row .col-md-6 {
     align-items: center;
 }
 
-main .row .col-md-6 {
+/*main .row .col-md-6 {
     padding-bottom: 12rem;
-}
+}*/
 
 .project-card {
     position: relative;

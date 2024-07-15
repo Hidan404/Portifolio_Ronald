@@ -30,7 +30,7 @@
     font-weight: bold;
 }
 @media (max-width: 768px){
-    main .row .col-md-6:first-child {
+    main .skills-section .row .col-md-6:first-child {
         padding-bottom: 0;
     }
 }
