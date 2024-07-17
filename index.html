@@ -36,7 +36,7 @@
     <title>Ronald_Dev</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="pagina-body">
       <nav class="navbar navbar-expand-md custom-navbar mb-1">
         <a class="navbar-brand logo" href="#">Ronald</a>
         <button
@@ -54,13 +54,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#pagina-body">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#pagina-about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#pagina-portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -72,7 +72,7 @@
         </div>
       </nav>
       <main class="mt-1 mb-1">
-        <section class="header-content mt-1">
+        <section class="header-content mt-1" id="pagina-about">
           <div class="section-content">
             <h1 class="text-title">
               <span class="color-text1">Ola!</span>
@@ -185,10 +185,10 @@
             <h6>Portfolio</h6>
           </div>
 
-          <div class="container mt-5 area-portfolio portfolio">
+          <div class="container mt-5 area-portfolio portfolio" id="pagina-portfolio">
             <div class="row">
               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card fadeInLeft">
+                <div class="card project-card animate-on-scroll fadeInLeft">
                   <img
                     src="Assets/desktop-preview.jpg"
                     class="card-img-top"
@@ -224,7 +224,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card fadeInDown">
+                <div class="card project-card animate-on-scroll fadeInDown">
                   <img
                     src="Assets/projetos-img/Art.png"
                     class="card-img-top"
@@ -261,7 +261,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card fadeInRight">
+                <div class="card project-card animate-on-scroll fadeInRight">
                   <img
                     src="Assets/projetos-img/chat app .jpg"
                     class="card-img-top"
@@ -299,7 +299,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card fadeInLeft">
+                <div class="card project-card animate-on-scroll fadeInLeft">
                   <img
                     src="Assets/projetos-img/E-commerce.png"
                     class="card-img-top"
@@ -336,7 +336,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card fadeInUp">
+                <div class="card project-card animate-on-scroll fadeInUp">
                   <img
                     src="Assets/projetos-img/Frontend Mentor - Calculator app.jpg"
                     class="card-img-top"
@@ -375,7 +375,7 @@
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card fadeInRight">
+                <div class="card project-card animate-on-scroll fadeInRight">
                   <img
                     src="Assets/projetos-img/Pagina de receitas.jpg"
                     class="card-img-top"
@@ -579,5 +579,6 @@
       </div>
     </div>
     <script src="JS/App.js"></script>
+    <script src="JS/Animation.js"></script>
   </body>
 </html>

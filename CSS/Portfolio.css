@@ -122,6 +122,20 @@ main .row .col-md-6 {
   transition: transform 0.5s ease;
 }
 
+/* animations*/
+.animate-on-scroll {
+  opacity: 0; /* Esconda o elemento inicialmente */
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
 @media (min-width: 768px) {
   .fadeInDown {
     -webkit-animation-name: fadeInDown;
