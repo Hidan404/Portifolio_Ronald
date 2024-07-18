@@ -47,8 +47,8 @@ main .row .col-md-6 {
   backdrop-filter: blur(10px);
   padding: 20px;
   transition: background 0.2s ease;
-  height: 329px;
-  font-size: calc(12px + (34 - 30) * ((100vw - 300px) / (1300 - 300)));
+  height: 350px;
+  font-size: calc(10px + (34 - 30) * ((100vw - 300px) / (1300 - 300)));
 }
 
 .portfolio .card-title {

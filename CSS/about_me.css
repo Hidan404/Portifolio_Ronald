@@ -84,6 +84,9 @@ main .text-about .btn-outline-primary:hover {
     background-color: var(--font-text);
     color: var(--font-text2);
 }
+main .text-about button a{
+    text-decoration: none;
+}
 .img-fluid {
     max-width: 100%;
     height: auto;
