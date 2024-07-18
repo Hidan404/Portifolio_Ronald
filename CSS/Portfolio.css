@@ -43,16 +43,18 @@ main .row .col-md-6 {
 
 .portfolio .card-body {
   position: relative;
-  background: var(--font-text);
+  background: #15072b;
   backdrop-filter: blur(10px);
   padding: 20px;
   transition: background 0.2s ease;
+  height: 329px;
+  font-size: calc(12px + (34 - 30) * ((100vw - 300px) / (1300 - 300)));
 }
 
 .portfolio .card-title {
   margin-bottom: 15px;
   font-weight: bold;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .portfolio .card-text {
@@ -80,7 +82,7 @@ main .row .col-md-6 {
   position: relative;
   overflow: hidden;
   transition: transform 0.5s ease;
-  box-shadow: 2px 2px 16px 0px #ccc;
+  box-shadow: 0px 0px 10px 2px #6e00ff;
 }
 
 .project-card:hover {

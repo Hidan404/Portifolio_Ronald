@@ -108,6 +108,8 @@
             </button>
           </div>
         </section>
+
+        <!--teste de servicos-->
         <section class="service mt-1 mb-1">
           <div class="service-text">
             <h3>Serviços</h3>
@@ -117,19 +119,21 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
               <!-- Card 1 -->
               <div class="col">
-                <div class="card">
+                <div class="card service-card">
                   <div class="card-body text-center">
                     <img src="Assets/ntest.svg" alt="Icon 1" class="mb-2" />
                     <h6 class="card-title mb-1">Responsividade Web</h6>
                     <p class="card-text description">
-                      This is the description for card 1. It appears on hover.
+                      Garantindo que seu site funcione perfeitamente em qualquer
+                      dispositivo, de desktops a smartphones, proporcionando uma
+                      experiência de usuário consistente e agradável.
                     </p>
                   </div>
                 </div>
               </div>
               <!-- Card 2 -->
               <div class="col">
-                <div class="card">
+                <div class="card service-card">
                   <div class="card-body text-center">
                     <img
                       src="Assets/noun-startup-749551.svg"
@@ -138,14 +142,16 @@
                     />
                     <h6 class="card-title mb-1">Criação de Sites</h6>
                     <p class="card-text description">
-                      This is the description for card 2. It appears on hover.
+                      Desenvolvimento de sites modernos e funcionais,
+                      personalizados para atender às necessidades específicas do
+                      seu negócio e atrair mais clientes.
                     </p>
                   </div>
                 </div>
               </div>
               <!-- Card 3 -->
               <div class="col">
-                <div class="card">
+                <div class="card service-card">
                   <div class="card-body text-center">
                     <img
                       src="Assets/noun-web-design-7017205.svg"
@@ -154,14 +160,16 @@
                     />
                     <h6 class="card-title mb-1">Design Web</h6>
                     <p class="card-text description">
-                      This is the description for card 3. It appears on hover.
+                      Design de interfaces intuitivas e visualmente atraentes,
+                      focando na usabilidade e na experiência do usuário para
+                      melhorar a interação com o seu site.
                     </p>
                   </div>
                 </div>
               </div>
-
+              <!-- Card 4 -->
               <div class="col">
-                <div class="card">
+                <div class="card service-card">
                   <div class="card-body text-center">
                     <img
                       src="Assets/noun-toolbox-7000929.svg"
@@ -170,7 +178,8 @@
                     />
                     <h6 class="card-title mb-1">Ajustes e Manutenção</h6>
                     <p class="card-text description">
-                      This is the description for card 4. It appears on hover.
+                      Serviços de ajustes e manutenção contínua para manter seu
+                      site sempre atualizado, seguro e com desempenho otimizado.
                     </p>
                   </div>
                 </div>
@@ -178,12 +187,16 @@
             </div>
           </div>
         </section>
+        <!--Fim do teste -->
         <section class="portfolio mt-1 pt-1">
           <div class="title-portfolio">
             <h6>Portfolio</h6>
           </div>
 
-          <div class="container mt-5 area-portfolio portfolio" id="pagina-portfolio">
+          <div
+            class="container mt-5 area-portfolio portfolio"
+            id="pagina-portfolio"
+          >
             <div class="row">
               <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card project-card animate-on-scroll fadeInLeft">
@@ -516,7 +529,11 @@
         </section>
         <section class="mt-1">
           <div class="container">
-            <form class="contact-form" action="https://formspree.io/f/xdknkjaw" method="post">
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xdknkjaw"
+              method="post"
+            >
               <h2>Contate-me</h2>
               <div class="row mb-2">
                 <div class="col-md-6" id="formulario-space2">
@@ -581,5 +598,34 @@
     </div>
     <script src="JS/App.js"></script>
     <script src="JS/Animation.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM content loaded");
+
+        const cards = document.querySelectorAll(".service-card");
+        console.log("Cards found:", cards.length);
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                console.log("Adding class to:", entry.target);
+                entry.target.classList.add("show-description");
+              } else {
+                console.log("Removing class from:", entry.target);
+                entry.target.classList.remove("show-description");
+              }
+            });
+          },
+          {
+            threshold: 0.4,
+          }
+        );
+
+        cards.forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
   </body>
 </html>
