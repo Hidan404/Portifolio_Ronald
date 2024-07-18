@@ -58,6 +58,7 @@ main .row .col-md-6 {
 .portfolio .card-text {
   color: var(--white);
   font-family: "Open Sans", sans-serif;
+  text-align: left;
 }
 
 .portfolio .tech-icons i {
