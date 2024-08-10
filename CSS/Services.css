@@ -49,9 +49,13 @@ main .service-text h3 {
 }
 
 .card h6 {
-    color: var(--indigo);
+    
     gap: 1rem;
     font-weight: 600;
+}
+.service .card-title h6{
+    color: var(--font-text2);
+    
 }
 
 .card .description {
