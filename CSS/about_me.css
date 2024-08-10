@@ -41,6 +41,10 @@ main .section-content .left-button{
     justify-content: flex-start;
     padding-bottom: 4rem;
 }
+main .section-content .left-button a {
+    text-decoration: none;
+    color: var(--font-text2);
+}
 main .section-content .left-button .btn {
     background-color: var(--font-text);
     transition: 0.5s;
