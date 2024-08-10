@@ -93,9 +93,13 @@ main .text-about button a{
 }
 
 @media (max-width: 768px) {
+    main #About_me .mt-1{
+        margin-top: 0;
+    }
     main .About_me {
       flex-direction: column; /* Empilhar colunas em telas menores */
       align-items: center;
+      
     }
     main .About_me p {
         margin: 0 15px;
