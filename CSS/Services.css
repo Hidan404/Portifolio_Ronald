@@ -8,7 +8,7 @@ main .service-text {
     height: 300px;
 }
 main .service .card-body  {
-    height: 310px;
+    height: 350px;
 }
 
 main .card-body img {
@@ -22,12 +22,16 @@ main .card-body img {
 main .service-text p {
     font-family: 'Open Sans', sans-serif;
     color: var(--font-text2);
+    
 }
 
 @media (max-width: 768px) {
     main .service-text p {
         margin-top: 2.5rem;
         margin-bottom: -4rem;
+    }
+    main .service .card-body  {
+        height: 350px;
     }
 }
 
@@ -53,14 +57,11 @@ main .service-text h3 {
     gap: 1rem;
     font-weight: 600;
 }
-.service .card-title h6{
-    color: var(--font-text2);
-    
-}
 
 .card .description {
     opacity: 0;
     transition: opacity 0.9s;
+    
 }
 
 .card.show-description .description {
