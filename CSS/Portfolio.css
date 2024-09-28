@@ -48,7 +48,7 @@ main .row .col-md-6 {
   padding: 20px;
   transition: background 0.2s ease;
   height: 480px;
-  font-size: calc(12px + (34 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(11px + (34 - 30) * ((100vw - 300px) / (1300 - 300)));
   line-height: normal;
 }
 
